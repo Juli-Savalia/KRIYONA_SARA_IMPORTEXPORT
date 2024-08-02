@@ -105,27 +105,9 @@ li a.credits {
     cursor: default;
 }
 
-html {
-    width: 100%;
-    height: auto;
-}
 
-body {
-    width: 100%;
-    height: auto;
-    font-size: 16px;
-    font-family: Dubai-Light;
-		background: rgba(30,30,30);
-}
 .testim {
-		width: 100%;
-		position: absolute;
-		top: 50%;
-		-webkit-transform: translatey(-50%);
-		-moz-transform: translatey(-50%);
-		-ms-transform: translatey(-50%);
-		-o-transform: translatey(-50%);
-		transform: translatey(-50%);
+	
 }
 
 .testim .wrap {

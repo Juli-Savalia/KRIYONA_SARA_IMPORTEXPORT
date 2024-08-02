@@ -8,6 +8,7 @@ import "../js/Slider";
 import "../js/cardss";
 import "../styles/Slider.css";
 import "../styles/Utility.css";
+import Testimonial from "../components/Testimonial"
 const Home = () => {
   return (
     <div className="">
@@ -342,58 +343,7 @@ const Home = () => {
         </div>
       </section>
       {/* 5th section */}
-      <section className="py-32 bg-[url('public/testimonial-bg.png')] relative">
-        <div className="container">
-          <section id="testim" className="testim">
-            <div className="testim-cover">
-              <div className="wrap">
-                <span
-                  id="right-arrow"
-                  className="arrow right fa fa-chevron-right"
-                />
-                <span
-                  id="left-arrow"
-                  className="arrow left fa fa-chevron-left "
-                />
-                <ul id="testim-dots" className="dots">
-                  <li className="dot active" />
-                  <li className="dot" />
-                  <li className="dot" />
-                  <li className="dot" />
-                  <li className="dot" />
-                </ul>
-                <div id="testim-content" className="cont">
-                  <div className="active">
-                    <div className="img">
-                      <img src="public/student1.jpg" alt="testimonials" />
-                    </div>
-                    <h2>Lorem P. Ipsum</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-                  <div className="inactive">
-                    <div className="img">
-                      <img src="public/student2.jpg" alt="testimonials" />
-                    </div>
-                    <h2>Lorem P. Ipsum</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <script src="https://use.fontawesome.com/1744f3f671.js"></script>
-        </div>
-      </section>
+      <Testimonial></Testimonial>
     </div>
   );
 };
