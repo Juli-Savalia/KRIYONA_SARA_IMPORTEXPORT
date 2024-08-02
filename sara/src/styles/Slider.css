@@ -144,7 +144,7 @@ li a.credits {
 }
 
 .testim .arrow:hover {
-    color: #ea830e;
+    color: #0e4cea;
 }
     
 
@@ -186,8 +186,8 @@ li a.credits {
 
 .testim .dots .dot.active,
 .testim .dots .dot:hover {
-    background: #ea830e;
-    border-color: #ea830e;
+    background: #0e4cea;
+    border-color: #0e4cea;
 }
 
 .testim .dots .dot.active {
@@ -232,7 +232,7 @@ li a.credits {
 }
 
 .testim .cont div h2 {
-    color: #ea830e;
+    color: #0e4cea;
     font-size: 1em;
     margin: 15px 0;
 }
@@ -304,13 +304,13 @@ li a.credits {
     }
 
     70% {
-        -webkit-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
+        -webkit-box-shadow: 0px 0px 10px 5px #0e4cea;        
+        box-shadow: 0px 0px 10px 5px #0e4cea;        
     }
 
     100% {
-        -webkit-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        -webkit-box-shadow: 0px 0px 0px 0px #0e4cea;        
+        box-shadow: 0px 0px 0px 0px #0e4cea;        
     }
 }
 
@@ -326,13 +326,13 @@ li a.credits {
     }
 
     70% {
-        -moz-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
+        -moz-box-shadow: 0px 0px 10px 5px #0e4cea;        
+        box-shadow: 0px 0px 10px 5px #0e4cea;        
     }
 
     100% {
-        -moz-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        -moz-box-shadow: 0px 0px 0px 0px #0e4cea;        
+        box-shadow: 0px 0px 0px 0px #0e4cea;        
     }
 }
 
@@ -348,13 +348,13 @@ li a.credits {
     }
 
     70% {
-        -ms-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
+        -ms-box-shadow: 0px 0px 10px 5px #0e4cea;        
+        box-shadow: 0px 0px 10px 5px #0e4cea;        
     }
 
     100% {
-        -ms-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        -ms-box-shadow: 0px 0px 0px 0px #0e4cea;        
+        box-shadow: 0px 0px 0px 0px #0e4cea;        
     }
 }
 
@@ -370,13 +370,13 @@ li a.credits {
     }
 
     70% {
-        -o-box-shadow: 0px 0px 10px 5px #ea830e;        
-        box-shadow: 0px 0px 10px 5px #ea830e;        
+        -o-box-shadow: 0px 0px 10px 5px #0e4cea;        
+        box-shadow: 0px 0px 10px 5px #0e4cea;        
     }
 
     100% {
-        -o-box-shadow: 0px 0px 0px 0px #ea830e;        
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        -o-box-shadow: 0px 0px 0px 0px #0e4cea;        
+        box-shadow: 0px 0px 0px 0px #0e4cea;        
     }
 }
 
@@ -390,11 +390,11 @@ li a.credits {
     }
 
     70% {
-        box-shadow: 0px 0px 10px 5px #ea830e;        
+        box-shadow: 0px 0px 10px 5px #0e4cea;        
     }
 
     100% {
-        box-shadow: 0px 0px 0px 0px #ea830e;        
+        box-shadow: 0px 0px 0px 0px #0e4cea;        
     }
 }
 

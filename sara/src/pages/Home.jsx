@@ -8,7 +8,8 @@ import "../js/Slider";
 import "../js/cardss";
 import "../styles/Slider.css";
 import "../styles/Utility.css";
-import Testimonial from "../components/Testimonial"
+import Testimonial from "../components/Testimonial";
+import Book from "../components/Book";
 const Home = () => {
   return (
     <div className="">
@@ -342,6 +343,69 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* 3rd section */}
+      <section className="py-24 bg-purple-50">
+        <div className="container">
+          <div className="flex flex-wrap">
+            <div className="col-8 relative">
+              <img
+                src="public/bulb.png"
+                alt="bulb"
+                className="absolute -top-20 right-10 swing h-16"
+              />
+              <h2 className="font-bold text-4xl">
+                Support during the <font className="text-blue-600">Course</font>{" "}
+                :
+              </h2>
+              <ul className="list-decimal pt-4 text-lg">
+                <li className="py-2">
+                  Lecture recording provided for technical glitches & missed
+                  class.
+                </li>
+                <li className="py-2">
+                  Participants can ask individual questions during the class.
+                </li>
+                <li className="py-2">Home work after the class.</li>
+                <li className="py-2">Course Completion Certificate.</li>
+                <li className="py-2">
+                  All PPT's and useful links will be provided with documents.
+                </li>
+              </ul>
+            </div>
+            <div className="col-4">
+              <img src="public/framevec2.svg" alt="framevec1" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-24">
+        <div className="container">
+          <div className="flex flex-wrap justify-between">
+            <div className="col-4 text-center">
+              <img src="public/framevec1.svg" alt="framevec1" />
+            </div>
+            <div className="col-7 ps-16">
+              <h2 className="font-bold text-4xl">
+                Support after the <font className="text-blue-600">Course</font>{" "}
+                :
+              </h2>
+              <ul className="list-decimal pt-4 text-lg">
+                <li className="py-2">Practical support.</li>
+                <li className="py-2">First Consignment support.</li>
+                <li className="py-2">
+                  Anytime assistance regarding queries 24*7 (on call support).
+                </li>
+                <li className="py-2">Exporting Community.</li>
+                <li className="py-2">
+                  All PPT's and useful links will be provided with documents.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* 4th section */}
+      <Book></Book>
       {/* 5th section */}
       <Testimonial></Testimonial>
     </div>

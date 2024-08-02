@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 
 const TestimonialSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,6 +24,11 @@ const TestimonialSlider = () => {
       (prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length
     );
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextSlide, 5000); // autoplay every 5 seconds
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
     <section className="py-32 bg-[url('public/testimonial-bg.png')] relative">
