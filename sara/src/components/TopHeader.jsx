@@ -2,7 +2,7 @@ import React from "react";
 
 const TopHeader = () => {
   return (
-    <div className="h-100 bg-orange-400">
+    <div className="h-100 bg-blue-600">
         <marquee
           behavior="scroll"
           className=" pb-2 pt-3 h-100 text-white font-semibold text-xs"

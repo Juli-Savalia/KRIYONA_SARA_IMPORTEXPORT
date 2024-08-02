@@ -1,0 +1,21 @@
+$bg-blue: linear-gradient(90deg, rgba(83,141,255,1) 0%, rgba(96,212,255,1) 44%, rgba(227,247,255,1) 100%);
+
+.bg-blue-gradient {
+    background-image: $bg-blue;
+}
+
+.transform3d{
+    transform: translate3d(0px,0px,0px)rotate(0.0001deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    pointer-events: none;;
+}
+.transform3d_vector1{
+    transform: translate3d(-1.8px, -6.6px, 0px);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    // position: relative;
+    display: block;
+    // left: 0px;
+    // top: 0px;
+}

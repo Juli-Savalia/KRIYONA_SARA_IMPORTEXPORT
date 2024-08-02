@@ -1,54 +1,120 @@
-import $ from "jquery";
-import 'slick-carousel';
+import $ from "jquery"
+// parallax 1st section
 
-var $slider = $('.slideshow .slider'),
-  maxItems = $('.item', $slider).length,
-  dragging = false,
-  tracking,
-  rightTracking;
+document.addEventListener("mousemove",parallax);
+function parallax(e){
+  document.querySelectorAll(".obj").forEach(function(move){
+    var moving_val = move.getAttribute("data-value");
+    var x = (e.clientX * moving_val) / 250;
+    var y = (e.clientY * moving_val) / 250;
 
-var $sliderRight = $('.slideshow').clone().addClass('slideshow-right').appendTo($('.split-slideshow'));
-
-var rightItems = $('.item', $sliderRight).toArray();
-var reverseItems = rightItems.reverse();
-$('.slider', $sliderRight).html('');
-for (let i = 0; i < maxItems; i++) {
-  $(reverseItems[i]).appendTo($('.slider', $sliderRight));
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  })
 }
 
-$slider.addClass('slideshow-left');
+// testimonial slider
+// vars
+// vars
+'use strict'
+var testim = document.getElementById("testim");
+var testimDots = document.getElementById("testim-dots")?.children;
+var testimContent = document.getElementById("testim-content")?.children;
+var testimLeftArrow = document.getElementById("left-arrow");
+var testimRightArrow = document.getElementById("right-arrow");
+var testimSpeed = 4500;
+var currentSlide = 0;
+var currentActive = 0;
+var testimTimer;
+var touchStartPos;
+var touchEndPos;
+var touchPosDiff;
+var ignoreTouch = 30;
 
-if ($('.slideshow-left').length > 0) {
-  $('.slideshow-left').slick({
-    vertical: true,
-    verticalSwiping: true,
-    arrows: false,
-    infinite: true,
-    dots: true,
-    speed: 1000,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
-  });
+window.onload = function() {
+    // keyboard shortcuts
+    document.addEventListener("keydown", function(e) {
+        switch (e.keyCode) {
+            case 37:
+                testimLeftArrow?.click();
+                break;
+
+            case 39:
+                testimRightArrow?.click();
+                break;
+        }
+    })
+
+    // add event listeners
+    testimLeftArrow?.addEventListener("click", function() {
+        playSlide(currentSlide -= 1);
+    })
+
+    testimRightArrow?.addEventListener("click", function() {
+        playSlide(currentSlide += 1);
+    })
+
+    for (var l = 0; l < testimDots?.length; l++) {
+        testimDots[l].addEventListener("click", function() {
+            playSlide(currentSlide = Array.prototype.indexOf.call(testimDots, this));
+        })
+    }
+
+    // touch events
+    testim?.addEventListener("touchstart", function(e) {
+        touchStartPos = e.changedTouches[0].clientX;
+    })
+
+    testim?.addEventListener("touchend", function(e) {
+        touchEndPos = e.changedTouches[0].clientX;
+
+        touchPosDiff = touchStartPos - touchEndPos;
+
+        console.log(touchPosDiff);
+        console.log(touchStartPos);    
+        console.log(touchEndPos);    
+
+        if (touchPosDiff > 0 + ignoreTouch) {
+            testimLeftArrow?.click();
+        } else if (touchPosDiff < 0 - ignoreTouch) {
+            testimRightArrow?.click();
+        } else {
+            return;
+        }
+    })
+
+    // start timer
+    testimTimer = setInterval(function() {
+        playSlide(currentSlide += 1);
+    }, testimSpeed)
 }
 
-if ($('.slideshow-right .slider').length > 0) {
-  $('.slideshow-right .slider').slick({
-    swipe: false,
-    vertical: true,
-    arrows: false,
-    infinite: true,
-    speed: 950,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-    initialSlide: maxItems - 1
-  });
+function playSlide(slide) {
+    for (var k = 0; k < testimContent?.length; k++) {
+        testimContent[k].classList.remove("active");
+        testimContent[k].classList.remove("inactive");
+    }
+
+    if (slide < 0) {
+        slide = currentSlide = testimContent?.length - 1;
+    }
+
+    if (slide > testimContent?.length - 1) {
+        slide = currentSlide = 0;
+    }
+
+    if (testimContent) {
+        testimContent[slide].classList.add("active");
+    }
+
+    changeDots(slide);
 }
 
-if ($('.slideshow-text').length > 0) {
-  $('.slideshow-text').slick({
-    swipe: false,
-    vertical: true,
-    arrows: false,
-    infinite: true,
-    speed: 900,
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
-  });
+function changeDots(slide) {
+    for (var j = 0; j < testimDots?.length; j++) {
+        testimDots[j].classList.remove("active");
+    }
+
+    if (testimDots) {
+        testimDots[slide].classList.add("active");
+    }
 }
