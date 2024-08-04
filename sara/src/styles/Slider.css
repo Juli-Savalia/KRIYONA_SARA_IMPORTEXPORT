@@ -238,7 +238,7 @@ li a.credits {
 }
 
 .testim .cont div p {
-    font-size: 1.15em;
+    /* font-size: 1.15em; */
     color: #eee;
     width: 80%;
     margin: auto;
@@ -682,7 +682,7 @@ li a.credits {
 	}
 	
 	.testim .cont div p {
-		line-height: 25px;
+		/* line-height: 25px; */
 	}
 
 }

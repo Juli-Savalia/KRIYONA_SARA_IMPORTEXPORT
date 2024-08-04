@@ -10,6 +10,8 @@ import "../styles/Slider.css";
 import "../styles/Utility.css";
 import Testimonial from "../components/Testimonial";
 import Book from "../components/Book";
+import Footer from "../components/Footer";
+import Copyright from "../components/Copyright"
 const Home = () => {
   return (
     <div className="">
@@ -167,7 +169,7 @@ const Home = () => {
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-[350px]">
               <h3 className="text-5xl leading-snug">
                 Welcome to the{" "}
-                <font color="blue" className="pe-4">
+                <font className="pe-4 text-mainblue">
                   Import Export
                 </font>
                 Bussiness Management
@@ -197,12 +199,12 @@ const Home = () => {
                   />
                 </div>
                 <p className="p-0 m-0 ps-4">
-                  <font className="text-blue-500 font-bold">5K+</font> students
+                  <font className="text-mainblue font-bold">5K+</font> students
                   are already with us
                 </p>
               </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 lg:h-[350px] sm:pt-16 md:pt-0 md:h-[470px]">
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 lg:h-[350px] sm:h-[500px] sm:pt-32 md:pt-0 md:h-[470px]">
               <div className="w-100 h-100">
                 <div className="relative h-100">
                   <img
@@ -271,70 +273,72 @@ const Home = () => {
         />
         <div className="container">
           <div className="flex flex-wrap relative items-center">
-            <div className="col-7 me-auto">
+            <div className="col-sm-12 col-md-10 col-lg-7 col-xl-7 sm:mx-auto md:mx-auto lg:me-auto xl:me-auto">
               {/* card1 */}
-              <div className="w-100 mx-auto bg-indigo-100 border-2 border-blue-800 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[10%]">
+              <div className="w-100 mx-auto bg-mainlightblue border-2 border-blue-400 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[10%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 text-blue-800 font-bold">
+                  <h3 className="m-0 font-bold">
                     400 + Seminar Done
                   </h3>
-                  <p className="m-0 text-3xl font-semibold text-blue-800">01</p>
+                  <p className="m-0 text-3xl font-bold">01</p>
                 </div>
-                <p className="text-blue-600 font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>
               </div>
               {/* card2 */}
-              <div className="w-100 mx-auto  bg-purple-100 border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
+              <div className="w-100 mx-auto  bg-mainpurple border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 text-purple-800 font-bold">
+                  <h3 className="m-0 font-bold">
                     70 + Batches Done
                   </h3>
-                  <p className="m-0 text-3xl text-purple-800 font-semibold">
+                  <p className="m-0 text-3xl font-bold">
                     02
                   </p>
                 </div>
-                <p className="text-purple-900  font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>
               </div>
               {/* card3 */}
-              <div className="w-100 mx-auto bg-indigo-100 border-2 border-blue-800 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[20%]">
+              <div className="w-100 mx-auto bg-mainlightblue border-2 border-blue-400 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 text-blue-800 font-bold">
+                  <h3 className="m-0 font-bold">
                     3000 + Happy Students
                   </h3>
-                  <p className="m-0 text-3xl font-semibold text-blue-800">03</p>
+                  <p className="m-0 text-3xl font-bold">03</p>
                 </div>
-                <p className="text-blue-600 font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>
               </div>
               {/* card4 */}
-              <div className="w-100 mx-auto  bg-purple-100 border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
+              <div className="w-100 mx-auto  bg-mainpurple border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 text-purple-800 font-bold">10 + Years</h3>
-                  <p className="m-0 text-3xl text-purple-800 font-semibold">
+                  <h3 className="m-0 font-bold">
+                    10 + Years
+                  </h3>
+                  <p className="m-0 text-3xl font-bold">
                     04
                   </p>
                 </div>
-                <p className="text-purple-900  font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>
               </div>
               {/* card5 */}
-              <div className="w-100 mx-auto bg-indigo-100 border-2 border-blue-800 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[20%]">
+              <div className="w-100 mx-auto bg-mainlightblue border-2 border-blue-400 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 text-blue-800 font-bold">
-                    12 + Branches all over the world.
+                  <h3 className="m-0 font-bold">
+                    12 + Branches all over the world
                   </h3>
-                  <p className="m-0 text-3xl font-semibold text-blue-800">05</p>
+                  <p className="m-0 text-3xl font-bold">05</p>
                 </div>
-                <p className="text-blue-600 font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>
@@ -344,59 +348,59 @@ const Home = () => {
         </div>
       </section>
       {/* 3rd section */}
-      <section className="py-24 bg-purple-50">
+      <section className="py-24 bg-mainpurple">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="col-8 relative">
+            <div className="col-sm-10 col-md-10 col-lg-8 col-xl-8 relative mx-auto">
               <img
                 src="public/bulb.png"
                 alt="bulb"
                 className="absolute -top-20 right-10 swing h-16"
               />
-              <h2 className="font-bold text-4xl">
-                Support during the <font className="text-blue-600">Course</font>{" "}
+              <h2 className="font-bold sm:text-3xl lg:text-4xl xl:text-4xl">
+                Support during the <font className="text-mainblue">Course</font>{" "}
                 :
               </h2>
-              <ul className="list-decimal pt-4 text-lg">
-                <li className="py-2">
+              <ul className="list-decimal pt-4">
+                <li className="py-2 sm:text-sm lg:text-base">
                   Lecture recording provided for technical glitches & missed
                   class.
                 </li>
-                <li className="py-2">
+                <li className="py-2 sm:text-sm lg:text-base">
                   Participants can ask individual questions during the class.
                 </li>
-                <li className="py-2">Home work after the class.</li>
-                <li className="py-2">Course Completion Certificate.</li>
-                <li className="py-2">
+                <li className="py-2 sm:text-sm lg:text-base">Home work after the class.</li>
+                <li className="py-2 sm:text-sm lg:text-base">Course Completion Certificate.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
                   All PPT's and useful links will be provided with documents.
                 </li>
               </ul>
             </div>
-            <div className="col-4">
-              <img src="public/framevec2.svg" alt="framevec1" />
+            <div className="col-sm-10 col-md-10 col-lg-4 col-xl-4 mx-auto">
+              <img src="public/framevec2.svg" alt="framevec1" className="mx-auto"/>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-24">
+      <section className="py-24 relative">
+      <img src="public/vector8.png" alt="v8" className="absolute right-0 animate-pulse"/>
         <div className="container">
           <div className="flex flex-wrap justify-between">
-            <div className="col-4 text-center">
-              <img src="public/framevec1.svg" alt="framevec1" />
+            <div className="col-sm-10 col-md-10 col-lg-4 col-xl-4 mx-auto sm:pb-10 lg:pb-0">
+              <img src="public/framevec1.svg" alt="framevec1" className="mx-auto"/>
             </div>
-            <div className="col-7 ps-16">
-              <h2 className="font-bold text-4xl">
-                Support after the <font className="text-blue-600">Course</font>{" "}
-                :
+            <div className="col-sm-10 col-md-10 col-lg-8 col-xl-8 relative mx-auto ps-16">
+              <h2 className="font-bold sm:text-3xl lg:text-4xl xl:text-4xl">
+                Support after the <font className="text-mainblue">Course</font>:
               </h2>
               <ul className="list-decimal pt-4 text-lg">
-                <li className="py-2">Practical support.</li>
-                <li className="py-2">First Consignment support.</li>
-                <li className="py-2">
+                <li className="py-2 sm:text-sm lg:text-base">Practical support.</li>
+                <li className="py-2 sm:text-sm lg:text-base">First Consignment support.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
                   Anytime assistance regarding queries 24*7 (on call support).
                 </li>
-                <li className="py-2">Exporting Community.</li>
-                <li className="py-2">
+                <li className="py-2 sm:text-sm lg:text-base">Exporting Community.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
                   All PPT's and useful links will be provided with documents.
                 </li>
               </ul>
@@ -408,6 +412,10 @@ const Home = () => {
       <Book></Book>
       {/* 5th section */}
       <Testimonial></Testimonial>
+      {/* last section */}
+      <Footer></Footer>
+      {/* copyright */}
+      <Copyright></Copyright>
     </div>
   );
 };

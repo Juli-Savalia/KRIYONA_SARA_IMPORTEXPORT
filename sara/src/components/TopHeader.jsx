@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../styles/Utility.css"
 const TopHeader = () => {
   return (
-    <div className="h-100 bg-blue-600">
+    <div className="h-100 bg-mainblue">
         <marquee
           behavior="scroll"
           className=" pb-2 pt-3 h-100 text-white font-semibold text-xs"

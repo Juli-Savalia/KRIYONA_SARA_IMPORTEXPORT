@@ -34,7 +34,7 @@ const TestimonialSlider = () => {
     <section className="py-32 bg-[url('public/testimonial-bg.png')] relative">
       <div className="container">
         <div className="flex flex-wrap items-center justify-between">
-          <div className="col-5">
+          <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5">
             <h2 className="text-5xl font-semibold text-black pb-4">
               What Our Students Says
             </h2>
@@ -46,13 +46,13 @@ const TestimonialSlider = () => {
             </p>
             <div className="pt-4 flex items-center">
               <img src="public/testimonialv4.png" alt="testimonialv4" />
-              <span className="text-blue-700 font-bold text-xl ps-4">
+              <span className="text-mainblue font-bold text-xl ps-4">
                 3k + Happy Students
               </span>
             </div>
           </div>
-          <div className="col-7">
-            <div className="bg-white border-indigo-700 border-2 p-3 rounded-lg w-75 mx-auto relative">
+          <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5 sm:pt-10 lg:pt-0 mx-auto">
+            <div className="bg-white border-indigo-700 border-2 p-3 rounded-xl sm:w-100 lg:w-75 mx-auto relative">
               <img
                 src="public/testimonialv1.png"
                 alt="testimonialv1"
@@ -103,8 +103,8 @@ const TestimonialSlider = () => {
                           <div className="img">
                             <img src={testimonial.imgSrc} alt="testimonials" />
                           </div>
-                          <h2>{testimonial.name}</h2>
-                          <p className="text-black">{testimonial.text}</p>
+                          <h2 className="text-mainblue lg:text-lg">{testimonial.name}</h2>
+                          <p className="text-black sm:text-sm lg:text-base">{testimonial.text}</p>
                         </div>
                       ))}
                     </div>
