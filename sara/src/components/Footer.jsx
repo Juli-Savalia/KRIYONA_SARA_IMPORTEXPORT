@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
-    <section className='py-20'>
+    <section className='py-20 bg-center bg-[url("public/footerbg.jpg")] bg-cover bg-mainpurple bg-blend-overlay'>
         <div className="container">
             <div className="flex flex-wrap">
                 <div className="col-4">

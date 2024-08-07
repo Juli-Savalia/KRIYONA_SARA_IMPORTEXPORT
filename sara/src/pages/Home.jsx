@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopHeader from "../components/TopHeader";
 import Header from "../components/Header";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel, ReactDOM } from "react-responsive-carousel";
-import { home } from "../Datas";
+import { Carousel } from "react-responsive-carousel";
+// import { home } from "../Datas";
 import "../js/Slider";
 import "../js/cardss";
 import "../styles/Slider.css";
@@ -11,8 +11,50 @@ import "../styles/Utility.css";
 import Testimonial from "../components/Testimonial";
 import Book from "../components/Book";
 import Footer from "../components/Footer";
-import Copyright from "../components/Copyright"
+import Copyright from "../components/Copyright";
+// import  {Swiper, Pagination } from 'swiper';
+// import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper.min.css';
+// import Swiper from "swiper";
 const Home = () => {
+  // useEffect(() => {
+  //   if (document.querySelector('.testimonial-slider-rtl')) {
+  //     const reviewsCarouselOptions = {
+  //       slidesPerView: 3.5,
+  //       spaceBetween: 30,
+  //       loop: true,
+  //       speed: 7500,
+  //       grabCursor: false,
+  //       pauseOnMouseEnter: false,
+  //       mousewheel: {
+  //         enabled: false,
+  //       },
+  //       keyboard: {
+  //         enabled: false,
+  //       },
+  //       allowTouchMove: false,
+  //       autoHeight: false,
+  //       initialSlide: 0,
+  //       autoplay: {
+  //         delay: 0,
+  //         disableOnInteraction: false,
+  //       },
+  //       navigation: {
+  //         nextEl: '.swiper-button-next',
+  //         prevEl: '.swiper-button-prev',
+  //       },
+  //       pagination: {
+  //         el: '.swiper-pagination',
+  //         clickable: true,
+  //       },
+  //     };
+
+  //     Swiper.use([Navigation, Pagination, Autoplay]);
+  //     new Swiper('.testimonial-slider-rtl', reviewsCarouselOptions);
+  //   }
+  // }, []);
+
+  
   return (
     <div className="">
       <TopHeader></TopHeader>
@@ -169,9 +211,7 @@ const Home = () => {
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 h-[350px]">
               <h3 className="text-5xl leading-snug">
                 Welcome to the{" "}
-                <font className="pe-4 text-mainblue">
-                  Import Export
-                </font>
+                <font className="pe-4 text-mainblue">Import Export</font>
                 Bussiness Management
               </h3>
               <p className="pt-3">
@@ -277,9 +317,7 @@ const Home = () => {
               {/* card1 */}
               <div className="w-100 mx-auto bg-mainlightblue border-2 border-blue-400 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[10%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 font-bold">
-                    400 + Seminar Done
-                  </h3>
+                  <h3 className="m-0 font-bold">400 + Seminar Done</h3>
                   <p className="m-0 text-3xl font-bold">01</p>
                 </div>
                 <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
@@ -290,12 +328,8 @@ const Home = () => {
               {/* card2 */}
               <div className="w-100 mx-auto  bg-mainpurple border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 font-bold">
-                    70 + Batches Done
-                  </h3>
-                  <p className="m-0 text-3xl font-bold">
-                    02
-                  </p>
+                  <h3 className="m-0 font-bold">70 + Batches Done</h3>
+                  <p className="m-0 text-3xl font-bold">02</p>
                 </div>
                 <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
@@ -305,9 +339,7 @@ const Home = () => {
               {/* card3 */}
               <div className="w-100 mx-auto bg-mainlightblue border-2 border-blue-400 shadow-lg rounded-xl p-5 -rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 font-bold">
-                    3000 + Happy Students
-                  </h3>
+                  <h3 className="m-0 font-bold">3000 + Happy Students</h3>
                   <p className="m-0 text-3xl font-bold">03</p>
                 </div>
                 <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
@@ -318,12 +350,8 @@ const Home = () => {
               {/* card4 */}
               <div className="w-100 mx-auto  bg-mainpurple border-2 border-purple-600 shadow-lg rounded-xl p-5 rotate-2 mb-8 sticky top-[20%]">
                 <div className="flex items-center justify-between">
-                  <h3 className="m-0 font-bold">
-                    10 + Years
-                  </h3>
-                  <p className="m-0 text-3xl font-bold">
-                    04
-                  </p>
+                  <h3 className="m-0 font-bold">10 + Years</h3>
+                  <p className="m-0 text-3xl font-bold">04</p>
                 </div>
                 <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
@@ -369,37 +397,59 @@ const Home = () => {
                 <li className="py-2 sm:text-sm lg:text-base">
                   Participants can ask individual questions during the class.
                 </li>
-                <li className="py-2 sm:text-sm lg:text-base">Home work after the class.</li>
-                <li className="py-2 sm:text-sm lg:text-base">Course Completion Certificate.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
+                  Home work after the class.
+                </li>
+                <li className="py-2 sm:text-sm lg:text-base">
+                  Course Completion Certificate.
+                </li>
                 <li className="py-2 sm:text-sm lg:text-base">
                   All PPT's and useful links will be provided with documents.
                 </li>
               </ul>
             </div>
             <div className="col-sm-10 col-md-10 col-lg-4 col-xl-4 mx-auto">
-              <img src="public/framevec2.svg" alt="framevec1" className="mx-auto"/>
+              <img
+                src="public/framevec2.svg"
+                alt="framevec1"
+                className="mx-auto"
+              />
             </div>
           </div>
         </div>
       </section>
       <section className="py-24 relative">
-      <img src="public/vector8.png" alt="v8" className="absolute right-0 animate-pulse"/>
+        <img
+          src="public/vector8.png"
+          alt="v8"
+          className="absolute right-0 animate-pulse"
+        />
         <div className="container">
           <div className="flex flex-wrap justify-between">
             <div className="col-sm-10 col-md-10 col-lg-4 col-xl-4 mx-auto sm:pb-10 lg:pb-0">
-              <img src="public/framevec1.svg" alt="framevec1" className="mx-auto"/>
+              <img
+                src="public/framevec1.svg"
+                alt="framevec1"
+                className="mx-auto"
+              />
             </div>
             <div className="col-sm-10 col-md-10 col-lg-8 col-xl-8 relative mx-auto ps-16">
               <h2 className="font-bold sm:text-3xl lg:text-4xl xl:text-4xl">
                 Support after the <font className="text-mainblue">Course</font>:
               </h2>
               <ul className="list-decimal pt-4 text-lg">
-                <li className="py-2 sm:text-sm lg:text-base">Practical support.</li>
-                <li className="py-2 sm:text-sm lg:text-base">First Consignment support.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
+                  Practical support.
+                </li>
+                <li className="py-2 sm:text-sm lg:text-base">
+                  First Consignment support.
+                </li>
                 <li className="py-2 sm:text-sm lg:text-base">
                   Anytime assistance regarding queries 24*7 (on call support).
                 </li>
-                <li className="py-2 sm:text-sm lg:text-base">Exporting Community.</li>
+                <li className="py-2 sm:text-sm lg:text-base">
+                  Exporting Community.
+                </li>
                 <li className="py-2 sm:text-sm lg:text-base">
                   All PPT's and useful links will be provided with documents.
                 </li>
@@ -412,6 +462,8 @@ const Home = () => {
       <Book></Book>
       {/* 5th section */}
       <Testimonial></Testimonial>
+      {/* 6th section */}
+      
       {/* last section */}
       <Footer></Footer>
       {/* copyright */}
