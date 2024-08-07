@@ -402,13 +402,13 @@ const Team = () => {
         <div className="container">
           <div className="flex flex-wrap items-center col-12">
             {teamMembers.map((member, index) => (
-             <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 px-4 sm:pb-24">
-               <div className="profile-card w-100 sm:h-[210px] md:h-[310px] lg:h-[192px] xl:h-[238px] group hover:sm:h-[300px] hover:lg:h-[290px] hover:md:h-[400px] hover:xl:h-[330px]" key={index}>
+             <div className="col-xs-2 col-sm-6 col-md-6 col-lg-3 col-xl-3 px-4 xs:pb-24 sm:pb-24">
+               <div className="profile-card sm:w-[100%] md:w-[100%] ld:w-[100%] xl:w-[100%] xs:w-[150px] xs:h-[150px] sm:h-[210px] md:h-[310px] lg:h-[192px] xl:h-[238px] group hover:xs:h-[250px] hover:sm:h-[300px] hover:lg:h-[290px] hover:md:h-[400px] hover:xl:h-[330px]" key={index}>
                 <div className="img">
                   <img src={member.image} alt={member.name} />
                 </div>
-                <div className="caption group-hover:md:-translate-y-[140px] group-hover:sm:-translate-y-[130px]">
-                  <h3 className="text-lg underline">{member.name}</h3>
+                <div className="caption group-hover:xs:-translate-y-[150px] group-hover:md:-translate-y-[140px] group-hover:sm:-translate-y-[130px]">
+                  <h3 className="xs:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-lg underline">{member.name}</h3>
                   <p className="text-blue text-xs py-2">{member.role}</p>
                   <div className="social-links flex justify-center">
                     {member.socialLinks && member.socialLinks.map((link, index) => (

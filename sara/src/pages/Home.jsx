@@ -244,7 +244,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 lg:h-[350px] sm:h-[500px] sm:pt-32 md:pt-0 md:h-[470px]">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 lg:h-[350px] sm:h-[500px] sm:pt-32 md:pt-0 md:h-[470px]">
               <div className="w-100 h-100">
                 <div className="relative h-100">
                   <img
@@ -320,7 +320,7 @@ const Home = () => {
                   <h3 className="m-0 font-bold">400 + Seminar Done</h3>
                   <p className="m-0 text-3xl font-bold">01</p>
                 </div>
-                <p className="font-thin text-center pt-5 sm:text-sm md:text-base lg:text-xl">
+                <p className="font-thin text-center xs:pt-2 sm:pt-3 md:pt-4 lg:pt-5 xl:pt-5 sm:text-sm md:text-base lg:text-xl">
                   Browse through our wide range of courses to find the perfect
                   fit for your educational needs.
                 </p>

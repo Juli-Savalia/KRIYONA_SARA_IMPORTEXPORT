@@ -50,7 +50,7 @@ const Companies = () => {
         <img src="public/star.webp" alt="star" className="absolute left-20 top-50 swing" />
         <img src="public/wheel.webp" alt="wheel" className="absolute right-20 top-0 swing h-9" />
         <img src="public/gift.webp" alt="gift" className="absolute right-20 bottom-40 swing h-9" />
-        <img src="public/gradient1.avif" alt="gift" className="absolute right-50 top-96 swing opacity-15" />
+        <img src="public/gradient1.avif" alt="gift" className="absolute right-50 top-96 swing opacity-15  xs:hidden sm:hidden md:hidden lg:block xl:block" />
         <div className="container">
           <div className="col-12 flex flex-wrap items-center">
             {/* {companies.map((company, index) => (

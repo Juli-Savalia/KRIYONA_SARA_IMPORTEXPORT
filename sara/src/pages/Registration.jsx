@@ -17,8 +17,8 @@ const Registration = () => {
       <section className="py-20">
         <div className="container">
           <div className="flex flex-wrap items-center">
-            <div className="col-sm-10 col-md-10 col-lg-7 col-xl-7">
-              <div className="shadow-lg w-75 p-6 rounded-lg border bordder-2 border-blue-300">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+              <div className=" xs:mb-20 sm:mb-20 md:mb-20 lg:mb-0 xl:mb-0 lg:w-[85%] xl:w-[85%] shadow-lg p-6 rounded-lg border bordder-2 border-blue-300">
                 <h3 className="text-center py-4 text-mainblue">Create Your Account</h3>
                 <form>
                   <input
@@ -57,10 +57,21 @@ const Registration = () => {
                   >
                     Register
                   </Link>
+                  <div className="py-4">
+                  <h6 className="text-center relative before:absolute before:content-[''] before:bg-slate-300 before:w-[35%] before:top-2 before:right-0 before:h-[1px]  after:absolute after:content-[''] after:bg-slate-300 after:w-[35%] after:top-2 after:left-0 after:h-[1px]">or SignUp with</h6>
+                </div>
+                  <div className="col-12 pb-4">
+                  <button className="bg-gray-200 rounded-3xl font-bold flex items-center w-100 py-3 text-center justify-center">
+                    <img src="public/google.png" alt="google" className="h-5 pe-2"/> Google
+                  </button>
+                </div>
+                <div className="flex justify-center">
+                    <Link to={'/signin'} className="text-decoration-none text-secondary ">Have an Account ? <font className='text-mainblue'>SignIn</font></Link>
+                  </div>
                 </form>
               </div>
             </div>
-            <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
               <img
                 src="public/contact.webp"
                 alt="contact"

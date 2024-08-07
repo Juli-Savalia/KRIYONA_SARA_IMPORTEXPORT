@@ -74,22 +74,22 @@ const Studentcorner = () => {
         <img
           src="voice.png"
           alt="voice"
-          className="h-24 absolute right-28 swing"
+          className="h-24 absolute right-28 swing  xs:hidden sm:hidden md:hidden lg:block xl:block"
         />
         <img
           src="bookcontact.png"
           alt="book"
-          className="h-24 absolute right-[500px] bottom-40 swing"
+          className="h-24 absolute right-[500px] bottom-40 swing  xs:hidden sm:hidden md:hidden lg:block xl:block"
         />
         <img
           src="mail.png"
           alt="mail"
-          className="h-24 absolute right-32 bottom-80 swing"
+          className="h-24 absolute right-32 bottom-80 swing  xs:hidden sm:hidden md:hidden lg:block xl:block"
         />
         <div className="container">
           <div className="flex flex-wrap items-center">
-            <div className="col-sm-10 col-md-10 col-lg-7 col-xl-7">
-              <div className="shadow-lg w-75 p-6 rounded-lg border bordder-2 border-blue-300">
+            <div className="col-xs-10 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+              <div className="shadow-lg xs:w-[100%] sm:w-[100%] md:w-[100%] lg:w-[75%] xl:w-[75%] p-6 rounded-lg border bordder-2 border-blue-300">
                 <h3 className="text-center py-4 text-mainblue">
                   Admission Form
                 </h3>
@@ -131,18 +131,18 @@ const Studentcorner = () => {
                 </form>
               </div>
             </div>
-            <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5">
+            <div className="col-sm-10 col-md-12 col-lg-5 col-xl-5 xs:hidden sm:hidden md:hidden lg:block xl:block">
               <img
                 src="public/admission.png"
                 alt="admission"
-                className="animate-translatey h-[400px]"
+                className="animate-translatey w-52 h-[400px]"
               />
             </div>
           </div>
         </div>
       </section>
       {/* benefits */}
-      <section className="py-24 relative">
+      <section className="xs:pt-0 sm:pt-0 md:py-24 lg:py-24 xl:py-24 relative">
         <img
           src="public/vector8.png"
           alt="v8"
@@ -162,8 +162,8 @@ const Studentcorner = () => {
                 <font className="text-mainblue">Benefits</font> of Import &
                 Export :
               </h2>
-              <ul className="list-decimal pt-4 text-lg flex">
-                <div className="col-sm-12 col-md-10 col-lg-6 col-xl-6">
+              <ul className="list-decimal pt-4 xs:text-sm sm:text-sm flex-wrap md:text-lg lg:text-lg xl:text-lg xs:block sm:block md:flex lg:flex xl:flex">
+                <div className="col-sm-12 col-md-4 col-lg-6 col-xl-6">
                   <li className="py-2 sm:text-sm lg:text-base">
                     No Goverment Taxes.
                   </li>
@@ -189,7 +189,7 @@ const Studentcorner = () => {
                     Currency Benefits
                   </li>
                 </div>
-                <div className="col-sm-12 col-md-10 col-lg-6 col-xl-6 ps-4">
+                <div className="col-sm-12 col-md-8 col-lg-6 col-xl-6 md:ps-16 lg:ps-4 xl:ps-4">
                   <li className="py-2 sm:text-sm lg:text-base">
                     Party's risk cover by ECGC.
                   </li>
@@ -222,12 +222,12 @@ const Studentcorner = () => {
         </div>
       </section>
       {/* Top Export Product List */}
-      <section className="py-24 relative">
+      <section className="xs:pt-20 sm:pt-20 md:pt-0 lg:py-24 xl:py-24 relative">
         <div className="container">
           <h3 className="font-bold text-4xl text-center">
             Top <font className="text-mainblue">Export</font> Product List
           </h3>
-          <div className="py-14 flex flex-wrap">
+          <div className="py-14 flex flex-wrap justify-center">
             {exportproduct.map((product, index) => (
               <div className="p-3 col-sm-4 col-md-3 col-lg-2 col-xl-2">
                 <button className="Btn">{product.name}</button>
@@ -242,7 +242,7 @@ const Studentcorner = () => {
           <h3 className="font-bold text-4xl text-center">
             Top <font className="text-mainblue">Import</font> Product List
           </h3>
-          <div className="py-14 flex flex-wrap">
+          <div className="py-14 flex flex-wrap justify-center">
             {exportproduct.map((product, index) => (
               <div className="p-3 col-sm-4 col-md-3 col-lg-2 col-xl-2">
                 <button className="Btn">{product.name}</button>

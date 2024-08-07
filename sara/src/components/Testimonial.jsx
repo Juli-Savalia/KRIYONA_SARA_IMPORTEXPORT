@@ -51,7 +51,7 @@ const TestimonialSlider = () => {
               </span>
             </div>
           </div>
-          <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5 sm:pt-10 lg:pt-0 mx-auto">
+          <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5 xs:pt-10 sm:pt-10 lg:pt-0 mx-auto">
             <div className="bg-white border-indigo-700 border-2 p-3 rounded-xl sm:w-100 lg:w-75 mx-auto relative">
               <img
                 src="public/testimonialv1.png"
@@ -66,7 +66,7 @@ const TestimonialSlider = () => {
               <img
                 src="public/testimonialv3.png"
                 alt="testimonialv3"
-                className="absolute -right-16 -bottom-14 -z-10"
+                className="absolute -right-16 -bottom-14 -z-10 xs:hidden sm:block"
               />
               <div id="testim" className="testim">
                 <div className="testim-cover">

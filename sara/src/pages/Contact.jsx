@@ -16,8 +16,8 @@ const Contact = () => {
       <section className="py-20">
         <div className="container">
           <div className="flex flex-wrap items-center">
-            <div className="col-sm-10 col-md-10 col-lg-7 col-xl-7">
-              <div className="shadow-lg w-75 p-6 rounded-lg border bordder-2 border-blue-300">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+              <div className="shadow-lg lg:w-[75%] xl:w-[75%] p-6 rounded-lg border bordder-2 border-blue-300">
                 <h3 className="text-center py-4 text-mainblue">Get In Touch with Us</h3>
                 <form>
                   <input
@@ -57,7 +57,7 @@ const Contact = () => {
                 </form>
               </div>
             </div>
-            <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
               <img
                 src="public/contact.webp"
                 alt="contact"
@@ -66,7 +66,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex flex-wrap pt-20 justify-between items-center">
-            <div className="col-sm-10 col-md-10 col-lg-6 col-xl-6">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-xl-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.4533422764316!2d72.88369137388216!3d21.213864381397883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f708f3f3c75%3A0x22819f3cf6b1cc28!2sThe%20Palladium%20Mall!5e0!3m2!1sen!2sin!4v1722763225717!5m2!1sen!2sin"
                 height="450"
@@ -76,7 +76,7 @@ const Contact = () => {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
-            <div className="col-sm-10 col-md-10 col-lg-5 col-xl-5">
+            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
               <ul>
                 <li className="pt-8 flex flex-wrap items-center">
                   <div className="bg-mainblue h-10 w-10 rounded-full pt-[11px]">
