@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import "../styles/Utility.css";
 import Footer from "../components/Footer";
 import Copyright from '../components/Copyright'
+import { Link } from "react-router-dom";
 const Studentcorner = () => {
   let exportproduct = [
     {
@@ -121,12 +122,12 @@ const Studentcorner = () => {
                     placeholder="Your Address"
                     className="p-3 rounded-3xl w-100 shadow-sm outline-none mb-3"
                   ></textarea>
-                  <button
-                    type="submit"
-                    className="p-3 rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
+                  < Link
+                    to={'/signin'}
+                    className="p-3 text-decoration-none text-center d-inline-block rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
                   >
                     Submit
-                  </button>
+                  </Link>
                 </form>
               </div>
             </div>

@@ -1247,6 +1247,10 @@ header.sticky {
   z-index: 1000;
 }
 
+header.sticky img{
+  height: 70px;
+}
+
 .Btn {
   position: relative;
   width: 150px;

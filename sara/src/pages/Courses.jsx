@@ -12,7 +12,7 @@ const cardData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"
   },
   {
-    image: "https://i.imgur.com/2DhmtJ4.jpg",
+    image: "public/export.png",
     title: "Kim Cattrall",
     status: "3 hours ago",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?"
