@@ -29,6 +29,13 @@ const Courses = () => {
       <Header></Header>
       <section className="py-28">
         <div className="container">
+          <div>
+            <h3 className="font-bold text-mainblue text-center text-4xl">BATCH SCHEDULE</h3>
+          </div>
+        </div>
+      </section>
+      <section className="py-28">
+        <div className="container">
           <div className="col-12">
             <div className="">
             <ul className="cards flex flex-wrap">
