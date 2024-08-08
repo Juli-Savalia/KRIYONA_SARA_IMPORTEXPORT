@@ -58,10 +58,10 @@ const Companies = () => {
       {loading ? (
         <div className="">
           <HashLoader
-            color={"red"}
+            color={"blue"}
             className="h-100 w-100"
             loading={loading}
-            size={20}
+            size={50}
             aria-label="Loading Spinner"
             data-testid="loader"
           />

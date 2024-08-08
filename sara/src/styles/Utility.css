@@ -1375,4 +1375,19 @@ header.sticky img {
   width: 100% !important;
   display: grid !important;
   place-items: center !important;
+}
+
+.swipers-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swipers-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=Utility.css.map */

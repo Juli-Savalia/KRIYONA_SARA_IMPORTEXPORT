@@ -3,14 +3,23 @@ import "../styles/Team.css";
 import "../styles/Utility.css";
 import TopHeader from "../components/TopHeader";
 import Header from "../components/Header";
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Copyright from "../components/Copyright";
-import TopBtn from '../components/Topbtn'
-
+import TopBtn from "../components/Topbtn";
+import HashLoader from "react-spinners/HashLoader";
+import {useEffect } from "react";
 const Team = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
   const [teamMembers] = useState([
     {
       name: "Satish Hirpara",
@@ -19,17 +28,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Jitesh Hirpara",
@@ -38,17 +47,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Darshit Hirpara",
@@ -57,17 +66,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Yagnik Buha",
@@ -76,17 +85,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Prashant Zalavadiya",
@@ -95,17 +104,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Prince Savaliya",
@@ -114,17 +123,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Dr.Vijay Gondliya",
@@ -133,17 +142,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Drashti Hirpara",
@@ -152,17 +161,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Jalpa Borad",
@@ -171,17 +180,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Priyanka Patel",
@@ -190,17 +199,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "JSrushti Patel",
@@ -209,17 +218,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Ritaben Bagadiya",
@@ -228,17 +237,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Keval Bhalala",
@@ -247,17 +256,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Shreyansh Gevariya",
@@ -266,17 +275,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Jay Gelani",
@@ -285,17 +294,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Jenish Paneliya",
@@ -304,17 +313,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Parth Jetawa",
@@ -323,17 +332,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
 
     {
@@ -343,17 +352,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Yashesh Patel",
@@ -362,17 +371,17 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
     {
       name: "Sanket Gelani",
@@ -381,54 +390,77 @@ const Team = () => {
       socialLinks: [
         {
           icon: <FaFacebookF />,
-          href: ""
+          href: "",
         },
         {
           icon: <FaInstagram />,
-          href: "https://www.instagram.com/eveg_group/"
+          href: "https://www.instagram.com/eveg_group/",
         },
         {
           icon: <FaTwitter />,
-          href: "#"
-        }
-      ]
+          href: "#",
+        },
+      ],
     },
   ]);
 
   return (
-    <div className="bg-mainpurple">
-      <TopHeader></TopHeader>
-      <Header></Header>
-      <h3 className="text-center text-4xl pt-5 text-mainblue m-0">Meet Our Team</h3>
-      <section className="pt-20 bg-mainpurple">
-        <div className="container">
-          <div className="flex flex-wrap items-center col-12">
-            {teamMembers.map((member, index) => (
-             <div className="col-xs-2 col-sm-6 col-md-6 col-lg-3 col-xl-3 px-4 xs:pb-24 sm:pb-24">
-               <div className="profile-card sm:w-[100%] md:w-[100%] ld:w-[100%] xl:w-[100%] xs:w-[150px] xs:h-[150px] sm:h-[210px] md:h-[310px] lg:h-[192px] xl:h-[238px] group hover:xs:h-[250px] hover:sm:h-[300px] hover:lg:h-[290px] hover:md:h-[400px] hover:xl:h-[330px]" key={index}>
-                <div className="img">
-                  <img src={member.image} alt={member.name} />
-                </div>
-                <div className="caption group-hover:xs:-translate-y-[150px] group-hover:md:-translate-y-[140px] group-hover:sm:-translate-y-[130px]">
-                  <h3 className="xs:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-lg underline">{member.name}</h3>
-                  <p className="text-blue text-xs py-2">{member.role}</p>
-                  <div className="social-links flex justify-center">
-                    {member.socialLinks && member.socialLinks.map((link, index) => (
-                      <a href={link.href} key={index} target="new">
-                        {link.icon} 
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-             </div>
-            ))}
-          </div>
+    <div className="load">
+      {loading ? (
+        <div className="">
+          <HashLoader
+            color={"blue"}
+            className="h-100 w-100"
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
-      </section>
-      <Footer></Footer>
-      <Copyright></Copyright>
-      <TopBtn/>
+      ) : (
+        <div className="bg-mainpurple">
+          <TopHeader></TopHeader>
+          <Header></Header>
+          <h3 className="text-center text-4xl pt-5 text-mainblue m-0">
+            Meet Our Team
+          </h3>
+          <section className="pt-20 bg-mainpurple">
+            <div className="container">
+              <div className="flex flex-wrap items-center col-12">
+                {teamMembers.map((member, index) => (
+                  <div className="col-xs-2 col-sm-6 col-md-6 col-lg-3 col-xl-3 px-4 xs:pb-24 sm:pb-24">
+                    <div
+                      className="profile-card sm:w-[100%] md:w-[100%] ld:w-[100%] xl:w-[100%] xs:w-[150px] xs:h-[150px] sm:h-[210px] md:h-[310px] lg:h-[192px] xl:h-[238px] group hover:xs:h-[250px] hover:sm:h-[300px] hover:lg:h-[290px] hover:md:h-[400px] hover:xl:h-[330px]"
+                      key={index}
+                    >
+                      <div className="img">
+                        <img src={member.image} alt={member.name} />
+                      </div>
+                      <div className="caption group-hover:xs:-translate-y-[150px] group-hover:md:-translate-y-[140px] group-hover:sm:-translate-y-[130px]">
+                        <h3 className="xs:text-sm sm:text-lg md:text-lg lg:text-lg xl:text-lg underline">
+                          {member.name}
+                        </h3>
+                        <p className="text-blue text-xs py-2">{member.role}</p>
+                        <div className="social-links flex justify-center">
+                          {member.socialLinks &&
+                            member.socialLinks.map((link, index) => (
+                              <a href={link.href} key={index} target="new">
+                                {link.icon}
+                              </a>
+                            ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+          <Footer></Footer>
+          <Copyright></Copyright>
+          <TopBtn />
+        </div>
+      )}
     </div>
   );
 };
