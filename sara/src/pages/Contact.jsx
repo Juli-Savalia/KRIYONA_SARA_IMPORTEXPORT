@@ -7,6 +7,7 @@ import "../styles/Utility.css";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoMdCall } from "react-icons/io";
+import TopBtn from '../components/Topbtn'
 
 const Contact = () => {
   return (
@@ -50,7 +51,7 @@ const Contact = () => {
                   ></textarea>
                   <button
                     type="submit"
-                    className="p-3 rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
+                    className="button p-3 rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
                   >
                     Submit
                   </button>
@@ -119,6 +120,7 @@ const Contact = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn/>
     </div>
   );
 };

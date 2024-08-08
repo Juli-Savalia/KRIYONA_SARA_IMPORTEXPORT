@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import '../styles/courses.css'
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
+import TopBtn from '../components/Topbtn'
+
 const cardData = [
   {
     image: "https://i.imgur.com/oYiTqum.jpg",
@@ -66,6 +68,7 @@ const Courses = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn/>
     </div>
   );
 };

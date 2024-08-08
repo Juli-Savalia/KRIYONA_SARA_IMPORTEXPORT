@@ -8,6 +8,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import TopBtn from '../components/Topbtn'
+
 const Forgetpsw = () => {
   return (
     <div className="bg-mainpurple">
@@ -51,6 +53,7 @@ const Forgetpsw = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn/>
     </div>
   );
 };

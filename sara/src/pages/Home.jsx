@@ -11,6 +11,7 @@ import "../styles/Utility.css";
 import Testimonial from "../components/Testimonial";
 import Book from "../components/Book";
 import Footer from "../components/Footer";
+import TopBtn from '../components/Topbtn'
 import Copyright from "../components/Copyright";
 // import  {Swiper, Pagination } from 'swiper';
 // import 'swiper/swiper-bundle.min.css';
@@ -468,6 +469,8 @@ const Home = () => {
       <Footer></Footer>
       {/* copyright */}
       <Copyright></Copyright>
+      {/* topbtn */}
+      <TopBtn/>
     </div>
   );
 };

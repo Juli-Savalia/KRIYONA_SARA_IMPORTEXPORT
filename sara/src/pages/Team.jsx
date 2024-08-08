@@ -8,6 +8,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Copyright from "../components/Copyright";
+import TopBtn from '../components/Topbtn'
+
 const Team = () => {
   const [teamMembers] = useState([
     {
@@ -426,6 +428,7 @@ const Team = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn/>
     </div>
   );
 };

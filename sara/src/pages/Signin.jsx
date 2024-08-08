@@ -8,6 +8,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
+import TopBtn from '../components/Topbtn'
 
 const Signin = () => {
   return (
@@ -46,7 +47,7 @@ const Signin = () => {
 
                   <button
                     type="submit"
-                    className="p-3 mt-4 rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
+                    className="button p-3 mt-4 rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
                   >
                     SignIn
                   </button>
@@ -69,6 +70,7 @@ const Signin = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn></TopBtn>
     </div>
   );
 };

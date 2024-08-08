@@ -5,6 +5,8 @@ import "../styles/Utility.css";
 import Footer from "../components/Footer";
 import Copyright from '../components/Copyright'
 import { Link } from "react-router-dom";
+import TopBtn from '../components/Topbtn'
+
 const Studentcorner = () => {
   let exportproduct = [
     {
@@ -124,7 +126,7 @@ const Studentcorner = () => {
                   ></textarea>
                   < Link
                     to={'/signin'}
-                    className="p-3 text-decoration-none text-center d-inline-block rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
+                    className="button  p-3 text-decoration-none text-center d-inline-block rounded-3xl w-100 shadow-sm outline-none mb-3 text-white bg-mainblue"
                   >
                     Submit
                   </Link>
@@ -135,7 +137,7 @@ const Studentcorner = () => {
               <img
                 src="public/admission.png"
                 alt="admission"
-                className="animate-translatey w-52 h-[400px]"
+                className="animate-translatey w-[24rem] h-[400px]"
               />
             </div>
           </div>
@@ -253,6 +255,7 @@ const Studentcorner = () => {
       </section>
       <Footer></Footer>
       <Copyright></Copyright>
+      <TopBtn/>
     </div>
   );
 };
